@@ -1,0 +1,79 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Product name as it appears on the shelf and on the site"
+    },
+    "department": {
+      "type": "string",
+      "enum": [
+        "groceries",
+        "fashion",
+        "shoes",
+        "beauty"
+      ],
+      "enumColors": [
+        "green",
+        "purple",
+        "yellow",
+        "pink"
+      ],
+      "description": "Which department of the mart the product belongs to"
+    },
+    "price": {
+      "type": "number",
+      "description": "Price in Nigerian naira"
+    },
+    "unit": {
+      "type": "string",
+      "description": "Pack size or size range, e.g. 5kg, 50ml, sizes 40 - 46"
+    },
+    "image": {
+      "type": "string",
+      "description": "Product image: either a full image URL or a photo key used by the site"
+    },
+    "blurb": {
+      "type": "string",
+      "description": "Short selling description shown in the quick view"
+    },
+    "badge": {
+      "type": "string",
+      "description": "Optional shelf label such as New in or Best seller"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Show this product in The July Edit on the home page"
+    },
+    "in_stock": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the item is currently on the shelf"
+    }
+  },
+  "required": [
+    "name",
+    "department",
+    "price"
+  ],
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

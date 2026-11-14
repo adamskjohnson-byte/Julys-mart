@@ -1,0 +1,89 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "reference": {
+      "type": "string",
+      "description": "Short reference shown to the customer, e.g. JM-4821"
+    },
+    "customer_name": {
+      "type": "string",
+      "description": "Name the floor team should ask for"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number to call and confirm the order"
+    },
+    "address": {
+      "type": "string",
+      "description": "Delivery address, or Pick up at the mart"
+    },
+    "fulfilment": {
+      "type": "string",
+      "enum": [
+        "delivery",
+        "pickup"
+      ],
+      "enumColors": [
+        "blue",
+        "purple"
+      ],
+      "description": "How the customer wants to receive the order"
+    },
+    "note": {
+      "type": "string",
+      "description": "Anything the customer asked us to know"
+    },
+    "lines": {
+      "type": "string",
+      "description": "Readable list of the items requested, one per line"
+    },
+    "item_count": {
+      "type": "number",
+      "description": "Total number of items requested"
+    },
+    "subtotal": {
+      "type": "number",
+      "description": "Subtotal in naira before delivery is confirmed"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "confirmed",
+        "delivered",
+        "cancelled"
+      ],
+      "enumColors": [
+        "yellow",
+        "blue",
+        "green",
+        "red"
+      ],
+      "default": "new",
+      "description": "Where the order is in the concierge flow"
+    }
+  },
+  "required": [
+    "customer_name",
+    "phone"
+  ],
+  "rls": {
+    "create": {},
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
