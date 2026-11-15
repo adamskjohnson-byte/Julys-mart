@@ -3,7 +3,7 @@ export const DEPARTMENTS = [
     key: 'provisions',
     name: 'Provisions & Groceries',
     short: 'Provisions',
-    image: 'provisions',
+    image: 'provisionsDepartment',
     caption: 'Restocked daily',
     blurb:
       'Rice, cooking oil, pasta and the pantry staples a household runs on — shelved fresh every morning before the doors open.',
@@ -21,7 +21,8 @@ export const DEPARTMENTS = [
     key: 'snacks',
     name: 'Biscuits & Snacks',
     short: 'Snacks',
-    image: 'snacks',
+    image: 'snacksDepartment',
+    imageAlt: 'Biscuits arranged on supermarket shelves',
     caption: 'Everyday favourites',
     blurb:
       'Crackers, digestives and cookies — the packets and tins that keep a kitchen ready for tea and visitors.',
@@ -30,7 +31,8 @@ export const DEPARTMENTS = [
     key: 'skincare',
     name: 'Creams & Skincare',
     short: 'Skincare',
-    image: 'skincare',
+    image: 'skincareDepartment',
+    imageAlt: 'Creams and skincare products displayed on supermarket shelves',
     caption: 'Gentle, trusted care',
     blurb:
       'Body cream, face cream and lotion for everyday care — simple formulas we keep on the shelf all year.',

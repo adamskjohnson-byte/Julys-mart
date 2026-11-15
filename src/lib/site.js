@@ -1,13 +1,13 @@
 export const SITE = {
   name: "July's Mart",
-  city: 'Awka',
+  city: 'Onitsha',
   state: 'Anambra State',
   country: 'Nigeria',
-  address: '12 Zik Avenue, Awka, Anambra State',
-  phone: '+234 800 000 0000',
-  whatsapp: '2348000000000',
+  address: 'Onitsha, Anambra State',
+  phone: '+234 705 332 6910',
+  whatsapp: '2347053326910',
   email: 'hello@julymart.ng',
-  tagline: 'Provisions, drinks, snacks and skincare under one roof in Awka.',
+  tagline: 'Provisions, drinks, snacks and skincare under one roof in Onitsha.',
 };
 
 export const NAV = [

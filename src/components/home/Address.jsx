@@ -25,15 +25,15 @@ export default function Address() {
         <div className="md:col-span-6 md:col-start-7">
           <Reveal delay={0.1}>
             <p className="text-base leading-relaxed text-ivory/70 md:text-lg">
-              July&rsquo;s Mart opened in Awka with a single idea: a family should
+              July&rsquo;s Mart opened in Anambra with a single idea: a family should
               be able to do a full week&rsquo;s shop and restock the house
-              &mdash; in one afternoon, under one roof.
+              in one afternoon, under one roof.
             </p>
             <p className="mt-5 text-base leading-relaxed text-ivory/50">
               That means provisions that are actually fresh, prices that are
               clear on the shelf, and staff who know where everything sits. No
               queues for the sake of queues. Shop in store at July&rsquo;s Mart,
-              Awka.
+              Anambra State.
             </p>
           </Reveal>
 

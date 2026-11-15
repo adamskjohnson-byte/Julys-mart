@@ -87,7 +87,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col gap-3 border-t border-ivory/15 pt-6 text-[11px] text-ivory/35 md:flex-row md:items-center md:justify-between">
           <span>
-            &copy; {new Date().getFullYear()} {SITE.name} &middot; {SITE.city}, {SITE.state}
+            &copy; {new Date().getFullYear()} {SITE.name} {[SITE.city, SITE.state].filter(Boolean).join(' · ')}
           </span>
           <span className="eyebrow text-[9px]">One roof. Four departments.</span>
         </div>

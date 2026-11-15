@@ -106,11 +106,11 @@ export default function QuickView({ product, onClose }) {
               <div className="mt-8 space-y-3 border-t border-foreground/10 pt-6 text-[12px] text-foreground/55">
                 <p className="flex items-center gap-2.5">
                   <Store className="h-4 w-4 text-brass" strokeWidth={1.5} />
-                  Shop in store at July&rsquo;s Mart, Awka
+                  Shop in store at July&rsquo;s Mart, Anambra State
                 </p>
                 <p className="flex items-center gap-2.5">
                   <MapPin className="h-4 w-4 text-brass" strokeWidth={1.5} />
-                  Collect free at the counter, 12 Zik Avenue
+                  Collect at the counter.
                 </p>
               </div>
             </div>

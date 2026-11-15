@@ -6,6 +6,7 @@ import QuickView from '@/components/shop/QuickView';
 import ShopFilters from '@/components/shop/ShopFilters';
 import Reveal from '@/components/site/Reveal';
 import { DEPARTMENTS } from '@/lib/catalog';
+import { resolveImage } from '@/lib/media';
 
 const PAGE_SIZE = 12;
 
@@ -67,7 +68,7 @@ export default function Shop() {
   return (
     <>
       <section className="pt-[68px] md:pt-[76px]">
-        <div className="mx-auto w-full max-w-[1680px] px-5 pb-8 pt-8 md:px-10 md:pb-10 md:pt-12">
+        <div className="mx-auto w-full max-w-[1680px] px-5 pb-6 pt-8 md:px-10 md:pb-8 md:pt-12">
           <p className="eyebrow text-brass">
             {current ? current.name : 'The whole mart'}
           </p>
@@ -78,10 +79,57 @@ export default function Shop() {
             <p className="max-w-sm text-sm leading-relaxed text-foreground/55">
               {current
                 ? current.blurb
-                : 'Provisions, drinks, snacks and skincare for the week. Shop in store at July’s Mart, Awka.'}
+                : 'Provisions, drinks, snacks and skincare for the week. Shop in store at July’s Mart, Onitsha.'}
             </p>
           </div>
         </div>
+      </section>
+
+      <section
+        aria-label="Shop departments"
+        className="mx-auto w-full max-w-[1680px] px-5 pb-6 md:px-10 md:pb-8"
+      >
+        {department === 'all' ? (
+          <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-4">
+            {DEPARTMENTS.map((entry) => (
+              <button
+                key={entry.key}
+                type="button"
+                onClick={() => setDepartment(entry.key)}
+                aria-label={`Shop ${entry.name}`}
+                className="group relative block w-full overflow-hidden bg-secondary text-left"
+              >
+                <div className="relative aspect-square overflow-hidden lg:aspect-[4/3]">
+                  <img
+                    src={resolveImage(entry.image)}
+                    alt={entry.imageAlt || `${entry.name} department at July's Mart`}
+                    className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <span className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
+                <span className="absolute inset-x-4 bottom-4 font-heading text-lg leading-tight text-white md:text-xl">
+                  {entry.name}
+                </span>
+              </button>
+            ))}
+          </div>
+        ) : current ? (
+          <div className="grid overflow-hidden border border-foreground/10 sm:grid-cols-2">
+            <div className="relative aspect-[16/10] overflow-hidden sm:h-[320px] sm:aspect-auto">
+              <img
+                src={resolveImage(current.image)}
+                alt={current.imageAlt || `${current.name} department at July's Mart`}
+                className="h-full w-full object-cover object-center"
+              />
+            </div>
+            <div className="flex flex-col justify-center bg-secondary/60 px-5 py-6 md:px-8 md:py-8">
+              <h2 className="font-heading text-2xl leading-tight text-foreground md:text-3xl">
+                {current.name}
+              </h2>
+              <p className="mt-3 eyebrow text-[10px] text-brass">{current.caption}</p>
+            </div>
+          </div>
+        ) : null}
       </section>
 
       <ShopFilters

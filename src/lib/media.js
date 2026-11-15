@@ -2,20 +2,27 @@ export const MEDIA = {
   // Department photography
   provisions:
     'https://media.base44.com/images/public/6af8779ac9354199bfa6f2f1/803cb3e6b_generated_image.png',
+  provisionsDepartment: '/images/sections.jpeg',
+  provisionsHero: '/images/provitions.jpeg',
   drinks:
     'https://media.base44.com/images/public/6af8779ac9354199bfa6f2f1/c2970d87c_generated_image.png',
+  drinksHero: '/images/softdrinks.jpeg',
+  drinksDepartment: '/images/softdrinks.jpeg',
   snacks:
     'https://media.base44.com/images/public/6af8779ac9354199bfa6f2f1/c0e1d1475_generated_image.png',
+  snacksHero: '/images/snacks.jpeg',
+  snacksDepartment: '/images/biscuits.jpeg',
   skincare:
     'https://media.base44.com/images/public/6af8779ac9354199bfa6f2f1/8afe145c5_generated_image.png',
+  skincareDepartment: '/images/skincare.jpeg',
 
   // Store photography
   exterior:
-    'https://media.base44.com/images/public/6af8779ac9354199bfa6f2f1/979d37aca_generated_03d1cd93.png',
+    '/images/shoppingproof.jpeg',
   atrium:
-    'https://media.base44.com/images/public/6af8779ac9354199bfa6f2f1/7d8ccd51a_generated_54b88427.png',
+    '/images/fruits.jpeg',
   produce:
-    'https://media.base44.com/images/public/6af8779ac9354199bfa6f2f1/0bac155e8_generated_e6348032.png',
+    '/images/creams.jpeg',
 
   // Product photography
   rice: 'https://media.base44.com/images/public/6af8779ac9354199bfa6f2f1/a3cfcfb24_generated_image.png',

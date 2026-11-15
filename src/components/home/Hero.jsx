@@ -5,9 +5,24 @@ import { MEDIA } from '@/lib/media';
 import { SITE } from '@/lib/site';
 
 const STRIP = [
-  { image: MEDIA.provisions, label: 'Provisions & Groceries', note: 'Restocked daily' },
-  { image: MEDIA.drinks, label: 'Drinks & Wine', note: 'Chilled and well stored' },
-  { image: MEDIA.snacks, label: 'Biscuits & Snacks', note: 'Everyday favourites' },
+  {
+    image: MEDIA.provisionsHero,
+    label: 'Provisions & Groceries',
+    note: 'Restocked daily',
+    alt: 'Shopping trolley in an aisle of packaged grocery products',
+  },
+  {
+    image: MEDIA.drinksHero,
+    label: 'Drinks & Wine',
+    note: 'Chilled and well stored',
+    alt: 'Rows of soft drinks stocked on supermarket shelves',
+  },
+  {
+    image: MEDIA.snacksHero,
+    label: 'Biscuits & Snacks',
+    note: 'Everyday favourites',
+    alt: 'A supermarket aisle stocked with assorted snack packets',
+  },
 ];
 
 export default function Hero() {
@@ -33,7 +48,7 @@ export default function Hero() {
           <div className="lg:col-span-4 lg:pb-3">
             <p className="max-w-sm text-[0.95rem] leading-relaxed text-foreground/65">
               Fresh provisions, drinks, snacks and skincare, all under one roof in
-              the heart of Awka. Restocked daily, easy to shop.
+              the heart of Anambra State. Restocked daily, easy to shop.
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-4">
               <Link
@@ -60,7 +75,7 @@ export default function Hero() {
             <div className="aspect-[3/4] md:aspect-[4/3]">
               <Image
                 src={tile.image}
-                alt={tile.label}
+                alt={tile.alt || tile.label}
                 className="h-full w-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.05]"
               />
             </div>

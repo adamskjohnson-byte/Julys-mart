@@ -26,7 +26,7 @@ export default function Brand({ dark = false, compact = false }) {
               dark ? 'text-ivory/45' : 'text-foreground/45'
             }`}
           >
-            Awka &middot; Anambra
+            Anambra State
           </span>
         </span>
       )}

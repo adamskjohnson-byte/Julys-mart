@@ -205,7 +205,7 @@ export default function Checkout() {
                 onChange={update('address')}
                 rows={3}
                 className="mt-2 w-full resize-none border-b border-foreground/20 bg-transparent py-3 text-sm focus:border-ink focus:outline-none"
-                placeholder="House number, street, area — Awka"
+                placeholder="House number, street, area — Onitsha"
               />
               {errors.address && <span className="mt-1.5 block text-[11px] text-destructive">{errors.address}</span>}
             </label>

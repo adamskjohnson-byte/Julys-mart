@@ -12,7 +12,7 @@ export default function Visit() {
         <div className="relative h-[46vh] min-h-[320px] w-full overflow-hidden bg-ink">
           <Image
             src={MEDIA.exterior}
-            alt="July's Mart in Awka, Anambra State"
+            alt="A shopping cart filled with groceries in a supermarket aisle"
             className="h-full w-full object-cover opacity-80"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
@@ -86,7 +86,7 @@ export default function Visit() {
                   ))}
                 </ul>
                 <p className="mt-5 text-[12px] leading-relaxed text-foreground/45">
-                  Public holidays: 10:00 — 18:00. Shop in store at July&rsquo;s Mart, Awka.
+                  Public holidays: 10:00 — 18:00. Shop in store at July&rsquo;s Mart, Onitsha.
                 </p>
                 <a
                   href={whatsappLink(`Hello ${SITE.name}, I would like directions to the mart.`)}

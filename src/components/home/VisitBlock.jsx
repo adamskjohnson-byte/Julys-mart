@@ -26,7 +26,7 @@ export default function VisitBlock() {
                   {SITE.address}
                 </p>
                 <p className="mt-1 text-[12px] text-foreground/40">
-                  Free parking &middot; Wheelchair access
+                  Free parking
                 </p>
               </div>
 
@@ -70,7 +70,7 @@ export default function VisitBlock() {
           <div className="aspect-[4/3] overflow-hidden bg-secondary md:aspect-[5/4]">
             <Image
               src={MEDIA.exterior}
-              alt="July's Mart building in Awka, Anambra State"
+              alt="A shopping cart filled with groceries in a supermarket aisle"
               className="h-full w-full object-cover"
             />
           </div>

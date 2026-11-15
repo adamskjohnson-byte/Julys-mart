@@ -36,7 +36,7 @@ export default function Departments() {
               <div className="aspect-[4/5] lg:aspect-[3/4]">
                 <Image
                   src={resolveImage(department.image)}
-                  alt={department.name}
+                  alt={department.imageAlt || department.name}
                   className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.06]"
                 />
               </div>
