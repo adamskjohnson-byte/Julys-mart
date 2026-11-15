@@ -1,4 +1,4 @@
-import { ShoppingBasket, Truck, Package, Gem } from 'lucide-react';
+import { ShoppingBasket, Snowflake, Package, Sparkles } from 'lucide-react';
 import Reveal from '@/components/site/Reveal';
 
 const SERVICES = [
@@ -8,19 +8,19 @@ const SERVICES = [
     copy: 'Send the list on WhatsApp and we shop it for you, bagged and waiting at the counter by the time you arrive.',
   },
   {
-    icon: Truck,
-    title: 'Same-day delivery',
-    copy: 'Orders placed before 4pm reach you anywhere in Awka the same evening. Onitsha and Nnewi next morning.',
+    icon: Snowflake,
+    title: 'Chilled storage',
+    copy: 'Drinks, wine and creams kept at the right temperature, from the shelf to your bag.',
   },
   {
     icon: Package,
     title: 'Bulk & business supply',
-    copy: 'Weekly provisions for homes, offices, hotels and events — invoiced, scheduled and delivered.',
+    copy: 'Weekly provisions for homes, offices, hotels and events — quoted, invoiced and packed for collection.',
   },
   {
-    icon: Gem,
-    title: 'Styling & fitting',
-    copy: 'Book a fitting in the fashion room. Our floor team styles from what is in stock, no pressure to buy.',
+    icon: Sparkles,
+    title: 'Skincare guidance',
+    copy: 'Ask at the creams counter which lotion or face cream suits your skin — no pressure to buy.',
   },
 ];
 
@@ -35,8 +35,8 @@ export default function Services() {
           </h2>
         </div>
         <p className="max-w-sm text-sm leading-relaxed text-foreground/55">
-          The floor is only half of it. These are the things we do between the
-          shelves and your door.
+          The shelves are only half of it. These are the extras that make a shop
+          at July&rsquo;s Mart easier.
         </p>
       </div>
 

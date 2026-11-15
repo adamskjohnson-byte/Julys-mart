@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="md:col-span-5">
             <Brand dark />
             <p className="mt-7 max-w-xs text-sm leading-relaxed text-ivory/55">
-              {SITE.tagline} Open seven days a week, with same-day delivery across Awka.
+              {SITE.tagline} Open seven days a week — shop in store at July&rsquo;s Mart.
             </p>
             <a
               href={whatsappLink(`Hello ${SITE.name}, I would like to make an enquiry.`)}

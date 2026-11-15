@@ -1,12 +1,14 @@
 const WORDS = [
-  'Groceries',
   'Provisions',
-  'Ready-to-wear',
-  'Shoes',
-  'Bags',
-  'Beauty',
-  'Fragrance',
-  'Home essentials',
+  'Groceries',
+  'Rice',
+  'Cooking Oil',
+  'Wine',
+  'Drinks',
+  'Biscuits',
+  'Snacks',
+  'Body Cream',
+  'Skincare',
 ];
 
 export default function Ticker() {

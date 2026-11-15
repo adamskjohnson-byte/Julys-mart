@@ -38,8 +38,7 @@ export default function Visit() {
               <p className="mt-5 text-sm leading-relaxed text-foreground/55">
                 Two minutes off the expressway, with parking at the front of the
                 building and a covered walkway to the entrance. Come in through
-                the grocery doors or the fashion side — both open onto the same
-                floor.
+                the main doors — every department sits on the same floor.
               </p>
 
               <div className="mt-8 space-y-5 border-t border-foreground/15 pt-8">
@@ -52,7 +51,7 @@ export default function Visit() {
                 <div className="flex gap-3">
                   <Package className="mt-0.5 h-4 w-4 shrink-0 text-brass" strokeWidth={1.5} />
                   <p className="text-sm text-foreground/65">
-                    Collect online orders at the concierge desk, no queue
+                    Collect phone requests at the counter, no queue
                   </p>
                 </div>
                 <div className="flex gap-3">
@@ -87,7 +86,7 @@ export default function Visit() {
                   ))}
                 </ul>
                 <p className="mt-5 text-[12px] leading-relaxed text-foreground/45">
-                  Public holidays: 10:00 — 18:00. Delivery runs until 7pm daily.
+                  Public holidays: 10:00 — 18:00. Shop in store at July&rsquo;s Mart, Awka.
                 </p>
                 <a
                   href={whatsappLink(`Hello ${SITE.name}, I would like directions to the mart.`)}
@@ -115,8 +114,9 @@ export default function Visit() {
           <div className="md:col-span-6 md:col-start-7">
             <p className="text-sm leading-relaxed text-foreground/60">
               Send us the list and the date. We price it at trade rates, invoice
-              it properly and deliver on the day you need it — weekly for offices
-              and hotels, or one-off for weddings and end-of-year parties.
+              it properly and pack it for collection on the day you need it — weekly
+              for offices and hotels, or one-off for weddings and end-of-year
+              parties.
             </p>
             <div className="mt-7 flex flex-wrap gap-x-6 gap-y-4">
               <a

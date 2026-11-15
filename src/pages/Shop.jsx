@@ -78,7 +78,7 @@ export default function Shop() {
             <p className="max-w-sm text-sm leading-relaxed text-foreground/55">
               {current
                 ? current.blurb
-                : 'Provisions for the week, pieces for the occasion, and everything between. Same-day delivery across Awka.'}
+                : 'Provisions, drinks, snacks and skincare for the week. Shop in store at July’s Mart, Awka.'}
             </p>
           </div>
         </div>

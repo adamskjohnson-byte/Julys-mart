@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Minus, Plus, X, Truck, MapPin } from 'lucide-react';
+import { Minus, Plus, X, Store, MapPin } from 'lucide-react';
 import { Image } from '@/components/ui/image';
 import { naira } from '@/lib/format';
 import { productImage } from '@/lib/media';
@@ -105,8 +105,8 @@ export default function QuickView({ product, onClose }) {
 
               <div className="mt-8 space-y-3 border-t border-foreground/10 pt-6 text-[12px] text-foreground/55">
                 <p className="flex items-center gap-2.5">
-                  <Truck className="h-4 w-4 text-brass" strokeWidth={1.5} />
-                  Same-day delivery across Awka on orders before 4pm
+                  <Store className="h-4 w-4 text-brass" strokeWidth={1.5} />
+                  Shop in store at July&rsquo;s Mart, Awka
                 </p>
                 <p className="flex items-center gap-2.5">
                   <MapPin className="h-4 w-4 text-brass" strokeWidth={1.5} />

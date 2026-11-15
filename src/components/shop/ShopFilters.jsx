@@ -2,7 +2,7 @@ import { Search, X } from 'lucide-react';
 import { DEPARTMENTS } from '@/lib/catalog';
 
 const SORTS = [
-  { value: '-created_date', label: 'Curated' },
+  { value: '-created_date', label: 'Latest' },
   { value: 'price', label: 'Price: low to high' },
   { value: '-price', label: 'Price: high to low' },
   { value: 'name', label: 'A — Z' },

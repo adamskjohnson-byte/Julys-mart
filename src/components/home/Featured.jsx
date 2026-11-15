@@ -14,7 +14,7 @@ export default function Featured() {
     <section className="mx-auto w-full max-w-[1680px] px-5 pb-20 md:px-10 md:pb-32">
       <div className="flex flex-col gap-6 border-t border-foreground/15 pt-5 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="eyebrow text-brass">Curated this week</p>
+          <p className="eyebrow text-brass">On the shelves now</p>
           <h2 className="display mt-4 text-[clamp(2.2rem,5vw,4.2rem)]">The July Edit</h2>
         </div>
         <Link

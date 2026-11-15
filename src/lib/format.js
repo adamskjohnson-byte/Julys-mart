@@ -16,13 +16,13 @@ export const buildOrderMessage = ({ items, subtotal, customer, note }) => {
     '',
     `Name: ${customer.name}`,
     `Phone: ${customer.phone}`,
-    `Delivery address: ${customer.address}`,
+    `Address: ${customer.address}`,
     note ? `Note: ${note}` : null,
     '',
     ...lines,
     '',
     `Subtotal: ${naira(subtotal)}`,
-    'Delivery: confirmed on the phone',
+    'Timing: confirmed on the phone',
   ]
     .filter((line) => line !== null)
     .join('\n');

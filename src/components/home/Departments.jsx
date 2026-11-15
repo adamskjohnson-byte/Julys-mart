@@ -51,7 +51,7 @@ export default function Departments() {
                 <div className="grid grid-rows-[1fr] transition-all duration-500 md:grid-rows-[0fr] md:group-hover:grid-rows-[1fr]">
                   <div className="overflow-hidden">
                     <p className="mt-2 text-[11px] leading-relaxed text-white/60">
-                      {department.items.join(' · ')}
+                      {department.caption}
                     </p>
                   </div>
                 </div>

@@ -5,9 +5,9 @@ import { MEDIA } from '@/lib/media';
 import { SITE } from '@/lib/site';
 
 const STRIP = [
-  { image: MEDIA.aisle, label: 'Groceries & Provisions', note: 'Restocked daily' },
-  { image: MEDIA.fashion, label: 'Fashion & Ready-to-wear', note: 'Native & modern' },
-  { image: MEDIA.shoes, label: 'Shoes & Bags', note: 'Leather, hand-picked' },
+  { image: MEDIA.provisions, label: 'Provisions & Groceries', note: 'Restocked daily' },
+  { image: MEDIA.drinks, label: 'Drinks & Wine', note: 'Chilled and well stored' },
+  { image: MEDIA.snacks, label: 'Biscuits & Snacks', note: 'Everyday favourites' },
 ];
 
 export default function Hero() {
@@ -19,7 +19,7 @@ export default function Hero() {
             Est. 2026 &mdash; {SITE.city}, {SITE.state}
           </span>
           <span className="eyebrow hidden text-foreground/50 md:block">
-            Groceries &middot; Ready-to-wear &middot; Shoes &middot; Beauty
+            Provisions &middot; Drinks &amp; Wine &middot; Snacks &middot; Skincare
           </span>
           <span className="eyebrow text-foreground/50">001 / 009</span>
         </div>
@@ -32,9 +32,8 @@ export default function Hero() {
           </div>
           <div className="lg:col-span-4 lg:pb-3">
             <p className="max-w-sm text-[0.95rem] leading-relaxed text-foreground/65">
-              Fresh provisions, ready-to-wear, footwear and beauty &mdash; four
-              departments under one roof in the heart of Awka. Curated weekly,
-              delivered across Anambra.
+              Fresh provisions, drinks, snacks and skincare, all under one roof in
+              the heart of Awka. Restocked daily, easy to shop.
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-4">
               <Link

@@ -84,7 +84,7 @@ export default function Checkout() {
           </h1>
           <p className="mt-4 text-sm leading-relaxed text-foreground/60">
             We have your list. Send it on WhatsApp so the floor team can confirm
-            stock, delivery time and the total before anything leaves the mart.
+            stock and the total before anything leaves the mart.
           </p>
           <div className="mt-9 flex flex-col items-center gap-4">
             <a
@@ -143,8 +143,8 @@ export default function Checkout() {
         Request your order
       </h1>
       <p className="mt-3 max-w-lg text-sm leading-relaxed text-foreground/55">
-        No card needed. Send the list, we call you to confirm stock and delivery,
-        then you pay on delivery or at the counter.
+        No card needed. Send the list, we call you to confirm stock, then you pay
+        at the counter or on delivery.
       </p>
 
       <div className="mt-12 grid gap-12 lg:grid-cols-12">
@@ -266,7 +266,7 @@ export default function Checkout() {
               <span className="font-heading text-2xl text-foreground">{naira(subtotal)}</span>
             </div>
             <p className="mt-2 text-[11px] text-foreground/45">
-              Delivery is confirmed on the phone. Nothing is charged here.
+              Confirmed on the phone. Nothing is charged here.
             </p>
           </div>
         </aside>

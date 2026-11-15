@@ -2,7 +2,7 @@ import Reveal from '@/components/site/Reveal';
 
 const FACTS = [
   { value: '04', label: 'Departments under one roof' },
-  { value: 'Same day', label: 'Delivery across Awka' },
+  { value: 'Daily', label: 'Shelves restocked' },
   { value: '7 days', label: 'Open every week' },
   { value: '1', label: 'Address to remember' },
 ];
@@ -15,7 +15,7 @@ export default function Address() {
           <Reveal>
             <p className="eyebrow text-brass">The Address</p>
             <h2 className="display mt-5 text-[clamp(2.2rem,5vw,4rem)]">
-              A mall built for
+              A supermarket built for
               <br />
               the way Anambra shops.
             </h2>
@@ -26,14 +26,14 @@ export default function Address() {
           <Reveal delay={0.1}>
             <p className="text-base leading-relaxed text-ivory/70 md:text-lg">
               July&rsquo;s Mart opened in Awka with a single idea: a family should
-              be able to do a full week&rsquo;s shop, dress for an owambe and
-              restock the house &mdash; in one afternoon, under one roof.
+              be able to do a full week&rsquo;s shop and restock the house
+              &mdash; in one afternoon, under one roof.
             </p>
             <p className="mt-5 text-base leading-relaxed text-ivory/50">
-              That means provisions that are actually fresh, clothes that fit
-              without a trip to Onitsha, and staff who know the shelves. No
-              queues for the sake of queues. No guessing whether what you ordered
-              is what will arrive.
+              That means provisions that are actually fresh, prices that are
+              clear on the shelf, and staff who know where everything sits. No
+              queues for the sake of queues. Shop in store at July&rsquo;s Mart,
+              Awka.
             </p>
           </Reveal>
 

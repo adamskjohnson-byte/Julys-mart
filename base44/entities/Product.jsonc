@@ -9,18 +9,18 @@
     "department": {
       "type": "string",
       "enum": [
-        "groceries",
-        "fashion",
-        "shoes",
-        "beauty"
+        "provisions",
+        "drinks",
+        "snacks",
+        "skincare"
       ],
       "enumColors": [
         "green",
-        "purple",
         "yellow",
+        "purple",
         "pink"
       ],
-      "description": "Which department of the mart the product belongs to"
+      "description": "Which department of the supermarket the product belongs to"
     },
     "price": {
       "type": "number",
@@ -28,7 +28,7 @@
     },
     "unit": {
       "type": "string",
-      "description": "Pack size or size range, e.g. 5kg, 50ml, sizes 40 - 46"
+      "description": "Pack size or volume, e.g. 5kg, 3 litres, pack of 6"
     },
     "image": {
       "type": "string",
@@ -51,6 +51,11 @@
       "type": "boolean",
       "default": true,
       "description": "Whether the item is currently on the shelf"
+    },
+    "sample_data": {
+      "type": "boolean",
+      "default": false,
+      "description": "Marks placeholder catalogue data with sample prices, to be replaced with real shelf prices"
     }
   },
   "required": [

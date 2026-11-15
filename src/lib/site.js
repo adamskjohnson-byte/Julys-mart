@@ -7,7 +7,7 @@ export const SITE = {
   phone: '+234 800 000 0000',
   whatsapp: '2348000000000',
   email: 'hello@julymart.ng',
-  tagline: 'Groceries, fashion, shoes and beauty under one roof in Awka.',
+  tagline: 'Provisions, drinks, snacks and skincare under one roof in Awka.',
 };
 
 export const NAV = [

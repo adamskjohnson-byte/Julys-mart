@@ -50,7 +50,7 @@ export default function CartSheet() {
               <div className="flex flex-1 flex-col items-center justify-center px-8 text-center">
                 <p className="font-heading text-2xl text-foreground">Your bag is empty.</p>
                 <p className="mt-2 text-sm text-foreground/50">
-                  Start with the departments &mdash; provisions, fashion, shoes or beauty.
+                  Start with the departments &mdash; provisions, drinks, snacks or skincare.
                 </p>
                 <Link
                   to="/shop"
@@ -126,7 +126,7 @@ export default function CartSheet() {
                     </span>
                   </div>
                   <p className="mt-2 text-[11px] text-foreground/45">
-                    Delivery confirmed when we call you back. Pay on delivery or at the counter.
+                    Confirmed when we call you back. Nothing is charged here.
                   </p>
                   <Link
                     to="/checkout"
