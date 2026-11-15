@@ -7,8 +7,9 @@ import { NAV, SITE } from '@/lib/site';
 import { whatsappLink } from '@/lib/format';
 import { resolveImage } from '@/lib/media';
 import { Image } from '@/components/ui/image';
+import ThemeToggle from '@/components/site/ThemeToggle';
 
-export default function MobileMenu({ onClose }) {
+export default function MobileMenu({ onClose, isDark, onToggleTheme }) {
   return (
     <motion.div
       className="fixed inset-0 z-[70] overflow-y-auto bg-background lg:hidden"
@@ -19,14 +20,17 @@ export default function MobileMenu({ onClose }) {
     >
       <div className="flex h-[68px] items-center justify-between px-5">
         <Brand />
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label="Close menu"
-          className="grid h-10 w-10 place-items-center text-foreground"
-        >
-          <X className="h-5 w-5" />
-        </button>
+        <div className="flex items-center gap-1">
+          <ThemeToggle isDark={isDark} onToggle={onToggleTheme} />
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close menu"
+            className="grid h-10 w-10 place-items-center text-foreground"
+          >
+            <X className="h-5 w-5" />
+          </button>
+        </div>
       </div>
 
       <div className="px-5 pb-14 pt-4">

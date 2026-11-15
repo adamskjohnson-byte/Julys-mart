@@ -4,14 +4,29 @@ import { AnimatePresence } from 'framer-motion';
 import { Menu, Search, ShoppingBag } from 'lucide-react';
 import Brand from '@/components/site/Brand';
 import MobileMenu from '@/components/site/MobileMenu';
+import ThemeToggle from '@/components/site/ThemeToggle';
 import { NAV } from '@/lib/site';
 import { useCart } from '@/context/CartContext';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(() =>
+    document.documentElement.classList.contains('dark')
+  );
   const { count, setOpen } = useCart();
   const { pathname } = useLocation();
+
+  const toggleTheme = () => {
+    setIsDark((current) => {
+      const next = !current;
+      document.documentElement.classList.toggle('dark', next);
+      try {
+        window.localStorage.setItem('theme', next ? 'dark' : 'light');
+      } catch {}
+      return next;
+    });
+  };
 
   useEffect(() => setMenuOpen(false), [pathname]);
 
@@ -78,6 +93,7 @@ export default function Header() {
                 </span>
               )}
             </button>
+            <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
@@ -91,7 +107,13 @@ export default function Header() {
       </header>
 
       <AnimatePresence>
-        {menuOpen && <MobileMenu onClose={() => setMenuOpen(false)} />}
+        {menuOpen && (
+          <MobileMenu
+            onClose={() => setMenuOpen(false)}
+            isDark={isDark}
+            onToggleTheme={toggleTheme}
+          />
+        )}
       </AnimatePresence>
     </>
   );
